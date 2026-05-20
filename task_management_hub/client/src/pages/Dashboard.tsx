@@ -46,23 +46,24 @@ const Dashboard = () => {
   }, [debouncedSearch, dispatch]);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="flex items-center gap-3 mb-6">
+    <div className="min-h-screen bg-gray-100 p-4">
+      <div className="flex items-center gap-3 mb-6 text-center justify-center">
         <ClipboardList className="w-8 h-8 text-blue-600" />
 
-        <h1 className="text-3xl font-bold text-gray-800">
+        <h1 className="text-2xl font-bold text-gray-800 text-center">
           Task Management Dashboard
         </h1>
       </div>
-
       <SearchBar
         value={searchInput}
         onChange={(value) => setSearchInput(value)}
       />
-      <ErrorAlert message={error || ""} />
-      <TaskForm onSubmit={(data) => dispatch(createTask(data))} />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+        <TaskForm onSubmit={(data) => dispatch(createTask(data))} />
+        <ErrorAlert message={error || ""} />
 
-      <TaskList tasks={tasks} onDelete={(id) => dispatch(deleteTask(id))} />
+        <TaskList tasks={tasks} onDelete={(id) => dispatch(deleteTask(id))} />
+      </div>
     </div>
   );
 };

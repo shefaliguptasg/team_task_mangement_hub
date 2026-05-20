@@ -32,8 +32,10 @@ const TaskForm = ({ onSubmit }: Props) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-2xl mx-auto">
-      <h2 className="text-2xl font-bold text-gray-800 mb-6">Create New Task</h2>
+    <div className="bg-white shadow-lg rounded-2xl p-4 w-full max-w-2xl mx-auto">
+      <h2 className="text-1xl font-bold text-gray-800 mb-2 text-center">
+        Create New Task
+      </h2>
 
       <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-5">
         {/* Title */}
@@ -46,7 +48,7 @@ const TaskForm = ({ onSubmit }: Props) => {
             type="text"
             placeholder="Enter task title"
             {...register("title")}
-            className={`w-full border rounded-xl px-4 py-3 outline-none transition
+            className={`w-full border rounded-xl px-2 py-3 outline-none transition
               ${
                 errors.title
                   ? "border-red-500 focus:ring-red-300"
@@ -66,17 +68,16 @@ const TaskForm = ({ onSubmit }: Props) => {
           </label>
 
           <textarea
-            rows={4}
+            rows={2}
             placeholder="Enter task description"
             {...register("description")}
-            className={`w-full border rounded-xl px-4 py-3 outline-none transition resize-none
+            className={`w-full border rounded-xl px-4 py-2 outline-none transition resize-none
               ${
                 errors.description
                   ? "border-red-500 focus:ring-red-300"
                   : "border-gray-300 focus:ring-2 focus:ring-blue-400"
               }`}
           />
-
           {errors.description && (
             <p className="text-red-500 text-sm mt-1">
               {errors.description.message}
