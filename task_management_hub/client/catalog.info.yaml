@@ -1,0 +1,8 @@
+ apiVersion: backstage.io/v1alpha1
+ kind: Component
+ metadata:
+   name: task_management_hub_frontend
+ spec:
+   type: service
+   owner: poc-backstage
+   lifecycle: experimental 
