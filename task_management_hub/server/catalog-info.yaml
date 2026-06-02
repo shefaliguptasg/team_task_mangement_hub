@@ -4,7 +4,7 @@ metadata:
   name: task-management-hub-backend
 spec:
   type: service
-  lifecycle: production
+  lifecycle: experimental
   owner: task-management-hub-team
   system: task-management-hub-system
   providesApis:
