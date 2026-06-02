@@ -6,7 +6,7 @@ metadata:
   description: React Frontend for Task Management Hub System
 
   annotations:
-    github.com/project-slug: shefaliguptasg/task-management-frontend
+    github.com/project-slug: shefaliguptasg/task_task_management_hub/client
 
   tags:
     - react
