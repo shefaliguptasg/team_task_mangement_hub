@@ -23,4 +23,4 @@ spec:
     - task-management-hub-api
 
   dependsOn:
-    - component: default/task-management-hub-backend
+    - component:default/task-management-hub-backend
