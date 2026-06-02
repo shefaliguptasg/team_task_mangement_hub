@@ -9,9 +9,9 @@ metadata:
     github.com/project-slug: shefaliguptasg/task-management-frontend
 
   tags:
-    - React
-    - TypeScipt
-    - Redux-Toolkit
+    - react
+    - typescript
+    - reduxtoolkit
 
 spec:
   type: website
