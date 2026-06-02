@@ -2,8 +2,18 @@
  kind: Component
  metadata:
    name: task_management_hub_frontend
+   title: Task Management Hub
+   description: React Frontend for Task Management Hub System
+   
+   annotations: github.com/project-slug: shefaliguptasg/task-management-frontend
+
+   tags:
+    - React
+    - TypeScipt
+    - Redux-Toolkit
+   
  spec:
-   type: service
+   type: website
    owner: task-management-hub-team
    lifecycle: experimental
    system: task-management-hub-system
