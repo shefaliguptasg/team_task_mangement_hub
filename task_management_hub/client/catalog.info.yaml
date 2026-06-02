@@ -1,6 +1,6 @@
- apiVersion: backstage.io/v1alpha1
- kind: Component
- metadata:
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
    name: task_management_hub_frontend
    title: Task Management Hub
    description: React Frontend for Task Management Hub System
