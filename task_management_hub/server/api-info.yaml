@@ -6,7 +6,6 @@ spec:
   type: openapi
   lifecycle: experimental
   owner: task-management-hub-team
-  system: task-management-hub-system
   definition:
     $text: ./openapi.yaml
        
