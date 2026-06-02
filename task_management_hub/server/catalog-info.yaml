@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: task-management-hub-backend
+spec:
+  type: service
+  lifecycle: production
+  owner: task-management-hub-team
+  system: task-management-hub-system
+  providesApis:
+    - task-management-hub-api
