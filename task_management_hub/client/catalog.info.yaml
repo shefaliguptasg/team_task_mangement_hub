@@ -5,4 +5,11 @@
  spec:
    type: service
    owner: poc-backstage
-   lifecycle: experimental 
+   lifecycle: experimental
+   system: task-management-hub-system
+
+  consumesApis:
+    - task-management-hub-api
+
+  dependsOn:
+    - component: default/task-management-hub-backend
