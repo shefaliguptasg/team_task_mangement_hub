@@ -4,7 +4,7 @@ metadata:
   name: task-management-hub-backend
   title: Management task
   description: backend application of task management
-  annoattion: 
+  annotations: 
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
