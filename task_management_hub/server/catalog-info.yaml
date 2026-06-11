@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: task-management-hub-backend
   title: Management task
-  description: backend application of task management
+  description: Backend application of task management
   annotations: 
     backstage.io/techdocs-ref: dir:.
 spec:
