@@ -5,7 +5,6 @@ metadata:
   title: Management task
   description: Backend application of task management
   annotations: 
-    backstage.io/source-location: url:https://github.com/shefaliguptasg/team_task_mangement_hub/tree/feature/backstage/task_management_hub/server
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
