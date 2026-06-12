@@ -1,10 +1,8 @@
 site_name: Task Mangement Application
-
 nav:
   - Home: index.md
   - Architecture: architecture.md
   - API Reference: api.md
   - Deployment: deployment.md
-
 plugins:
   - techdocs-core

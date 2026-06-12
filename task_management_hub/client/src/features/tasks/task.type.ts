@@ -6,6 +6,7 @@ export interface Task extends newTask {
   id: string;
 }
 
+
 export interface newTask {
   title: string;
   description?: string;
@@ -18,4 +19,11 @@ export interface TaskState {
   loading: boolean;
   error: string | null;
   search: string;
+}
+
+export type a ={
+    name : string;
+}
+export type a = {
+    age:number
 }

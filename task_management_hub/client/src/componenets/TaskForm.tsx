@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { taskSchema, type TaskFormData } from "../schemas/task.schema.js";
+import { useRef, useState } from "react";
+import CustomeInput from "./CustomeInput.tsx";
 
 interface Props {
   onSubmit: (data: TaskFormData) => void;
@@ -25,6 +27,11 @@ const TaskForm = ({ onSubmit }: Props) => {
     },
   });
 
+  const inputUserNameRef = useRef<HTMLInputElement>(
+    "" as unknown as HTMLInputElement,
+  );
+  const [userName, setUserName] = useState("");
+
   const handleFormSubmit = (data: TaskFormData) => {
     onSubmit(data);
 
@@ -38,6 +45,20 @@ const TaskForm = ({ onSubmit }: Props) => {
       </h2>
 
       <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-5">
+        <div>
+          <label
+            className="block text-sm font-medium text-gray-700 mb-2 cursor-pointer"
+            htmlFor="userName"
+            onClick={() => inputUserNameRef.current.focus()}
+          >
+            User Name
+          </label>
+          <CustomeInput
+            ref={inputUserNameRef}
+            value={userName}
+            onChange={setUserName}
+          />
+        </div>
         {/* Title */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">

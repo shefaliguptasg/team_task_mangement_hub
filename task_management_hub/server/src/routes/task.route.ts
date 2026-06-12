@@ -8,7 +8,7 @@ const router = Router();
 
 router.get("/", getTasks);
 
-router.post(
+router.post( 
   "/",
   validate(TaskSchema),
   createTask
